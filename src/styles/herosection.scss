@@ -1,0 +1,14 @@
+@use "../styles/variables" as *;
+
+.hero-section{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    p{font-size: 25px; color: $color4;}
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

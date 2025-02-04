@@ -1,0 +1,208 @@
+@use "../styles/variables" as *;
+
+.example-btn{
+    padding: 1em;
+    display: inline-block;
+    text-align: center;
+    width: auto;
+    margin: 0 auto;
+    color: $color2;
+    text-decoration: none;
+    border-radius: 10px;
+    background-color: $color8;
+    border: 1px solid;
+    transition: .3s background ease;
+    &:hover{
+        background-color: white;
+        color: $color8;
+    }
+}
+
+/*-------------------------------BUTTONS----------------------*/
+.buttons-gallery{
+    background-color: whitesmoke;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    justify-content: center;
+    padding: 3em 2.8em;
+}
+.button-card{
+    width: auto;
+    max-width: 400px;
+    padding: 2em;
+    background-color: $color2;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+.button-example {
+    width: auto;
+    max-width: 300px;
+    padding: 0.5em 1em;
+    border: 0;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: 0.3s ease-in-out;
+}
+
+/* boton 1 */
+.button1 {
+    background: #e0e0e0;
+    color: #333;
+    box-shadow: 4px 4px 8px #b8b8b8, -4px -4px 8px #ffffff;
+    transition: 0.3s ease-in-out;
+}
+.button1:hover {
+    box-shadow: inset 4px 4px 8px #b8b8b8, inset -4px -4px 8px #ffffff;
+}
+
+/* boton 2 */
+.button2 {
+    background: rgb(54, 141, 255);
+    color: white;
+}
+.button2:hover {
+    background: rgb(0, 110, 255);
+}
+
+/* boton 3 gradient */
+.button3 {
+    background: linear-gradient(90deg, #9500ff, #ff00ff);
+    color: white;
+    border-radius: 30px;
+    padding: 0.75em 1.5em;
+    transition: background 0.3s ease-in-out;
+}
+.button3:hover {
+    background: linear-gradient(90deg, #ff00ff, #9500ff);
+}
+
+/* boton 4 */
+.button4 {
+    background: black;
+    color: #00ffea;
+    border: 2px solid #00ffea;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+    overflow: hidden;
+}
+
+.button4::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 255, 234, 0.2);
+    transition: left 0.3s ease-in-out;
+}
+
+.button4:hover::before {
+    left: 100%;
+}
+
+.button5{
+    background: #ff4747; 
+    color: white; 
+    border-radius: 10px; 
+    padding: 10px 20px;
+    font-weight: bold; 
+    box-shadow: 0px 4px 15px rgba(255, 71, 71, 0.4); 
+    transition: transform 0.2s ease-in-out;
+} 
+.button5:hover{ 
+    transform: scale(1.1);
+}
+
+.button6{ 
+    background: transparent; 
+    color: #ff6347; 
+    border: 2px solid #ff6347;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+    &:hover{ 
+        background: #ff6347;
+        color: white;
+    }
+}
+
+.button7{
+    background: #008080;  
+    color: white; 
+    border-radius: 50px; 
+    padding: 12px 24px; 
+    font-weight: bold; 
+    transition: all 0.3s ease-in-out; 
+    
+    &:hover{ box-shadow: 0px 4px 20px rgba(0, 128, 128, 0.6); transform: translateY(-3px);}
+}
+
+.button8{
+    background: linear-gradient(45deg, #ff6b6b, #f06595);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: bold; 
+    box-shadow: 0px 5px 15px rgba(240, 101, 149, 0.4);
+    transition: all 0.3s ease-in-out;
+    
+    &:hover{
+        filter: brightness(1.2);
+    }
+}
+
+.button9{
+    background: rgb(140,238,254);
+    background: linear-gradient(107deg, rgba(140,238,254,1) 38%, rgba(204,132,255,1) 77%);
+    border-radius: 20px;
+    padding: 12px 24px;
+    font-weight: bold;
+    color: white;
+    transition: .3s all ease;
+    &:hover{
+        filter: brightness(1.3);
+        color: black;
+        box-shadow: 4px 8px 4px 1px rgba(207, 111, 252, 0.363);
+    }
+}
+.button10{
+    padding: 13px;
+    background-color: rgb(255, 187, 0);
+    border-radius: 10px;
+    transition: .2s all ease-in;
+    &:hover{
+        box-shadow: 4px 8px 1px black;
+        transform: translateY(-5px);
+    }
+}
+
+.button11{
+    padding: 1em;
+    background-color: #272727;
+    color: #eeee;
+    border: 1px solid #272727;
+    transition: .2s background;
+    &:hover{
+        background-color: transparent;
+        color: #272727;
+    }
+}
+.button12{
+    padding: 1em;
+    background-color: transparent;
+    color: #272727;
+    border: 1px solid #272727;
+    transition: .2s background;
+    &:hover{
+        background-color: #272727;
+        color: #eeee;
+    }
+}
+

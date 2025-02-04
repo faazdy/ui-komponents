@@ -1,0 +1,175 @@
+/* card section */
+.example-card{
+    width: 360px;
+    margin: 0 auto;
+    border-radius: 16px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 30px 100px 0px rgba(17, 23, 41, 0.05);
+}
+
+.example-card-img{
+    width: 100%;
+    padding: 1em;
+    
+}
+.example-card-img img{
+    width: 100%;
+    border-radius: 16px;
+}
+
+.example-card-info{
+    border-bottom: 1px solid #E5EAF0;
+    padding: 0 1em;
+    padding-bottom: 1em;
+}
+
+.example-card-type{
+    margin-bottom: 1em;
+}
+
+.example-card-type span{
+    background-color: #E6D6FC;
+    color: #883AE1;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 5px 15px;
+    border-radius: 10px;
+}
+
+.example-card-text h1{
+    color: #20293A;
+    font-size: 18px;
+}
+.example-card-text p{
+    color: #6C727F;
+}
+
+.example-card-profile{
+    padding: 1em;
+}
+.example-card-profile a{
+    text-decoration: none;
+    color: #6C727F;
+    font-size: 12px;
+}
+
+.example-card-profile a:hover{
+    color: #883AE1;
+}
+.new-example-card {
+    background: #ffffff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  
+  /* Estilos para la imagen */
+  .new-card-img img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-bottom: 2px solid #f1f1f1;
+  }
+  
+  /* Información de la tarjeta */
+  .new-card-info {
+    padding: 20px;
+  }
+  
+  /* Encabezado con título y subtítulo */
+  .new-card-header h2 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .new-card-subtitle {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  /* Descripción de la tarjeta */
+  .new-card-description p {
+    font-size: 15px;
+    color: #777;
+    line-height: 1.5;
+    margin-top: 15px;
+  }
+  
+  /* Pie de la tarjeta con enlace */
+  .new-card-footer a {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    color: #007bff;
+    transition: color 0.3s ease;
+  }
+  
+  .new-card-footer a:hover {
+    color: #0056b3;
+  }
+
+  .horizontal-card {
+    display: flex;
+    background: #ffffff;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 600px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  
+  /* Imagen en la tarjeta horizontal */
+  .horizontal-card-img img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-right: 20px;
+  }
+  
+  /* Información de la tarjeta horizontal */
+  .horizontal-card-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    width: 100%;
+  }
+  
+  /* Encabezado con título y subtítulo */
+  .horizontal-card-header h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .horizontal-card-subtitle {
+    font-size: 16px;
+    color: #777;
+  }
+  
+  /* Descripción de la tarjeta horizontal */
+  .horizontal-card-description p {
+    font-size: 15px;
+    color: #555;
+    line-height: 1.5;
+    margin-top: 10px;
+  }
+  
+  /* Pie de la tarjeta con enlace */
+  .horizontal-card-footer a {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    color: #007bff;
+    transition: color 0.3s ease;
+    margin-top: 15px;
+  }
+  

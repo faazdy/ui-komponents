@@ -1,0 +1,53 @@
+@use "variables" as *;
+/* example */
+.card-example{
+    width: 50%;
+    max-width: 600px;
+    text-align: center;
+    padding: 2em;
+    background-color: $color1;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.card-example:nth-child(2){
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.card-example:nth-child(3){
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+/*---------------------------------SHADOW GALLERY*/
+.shadows-gallery{
+    background-color: whitesmoke;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(4, 1fr);
+}
+.shadow-card{
+    margin: 3em;
+    width: auto;
+    max-width: 300px;
+    background-color: white;
+    padding: 3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border-radius: 10px;
+
+    strong{
+        color: $color5;
+    }
+}
+.open-code{
+    border: 0;
+    margin-top: 1em;
+    padding: .5em;
+    border-radius: 5px;
+    background-color: $color7;
+    color: $color2;
+    cursor: pointer;
+    transition: .2s all ease;
+
+    &:hover{
+        background-color: $color8;
+    }
+}
