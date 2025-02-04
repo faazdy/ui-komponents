@@ -36,19 +36,19 @@ function Home() {
             </Link>
           </div>
           <div className="content-image">
-            <img src="assets/images/home-buttons.png" alt="shadows" />
+            <img src="assets/images/home-buttons.png" alt="buttons" />
           </div>     
         </article>
         <article className="main-section-content">
           <div className="content-text">
             <h2>Cards</h2>
             <p>Organize content visually with stylish, customizable cards.</p>
-            <Link to="/shadows" className="example-btn">
+            <Link to="/cards" className="example-btn">
               Show more
             </Link>
           </div>
           <div className="content-image">
-            <img src="assets/images/home-shadows.png" alt="shadows" />
+            <img src="assets/images/home-cards.png" alt="cards" />
           </div>
         </article>
       </section>

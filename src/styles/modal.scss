@@ -1,4 +1,4 @@
-
+@use "./variables" as *;
 .modal-code{
     display: none;
     position: fixed;
@@ -30,13 +30,14 @@
         position: sticky;
         top: 0;
         button{
-            background-color: rgba(255, 0, 0, 0.363);
+            background-color: $color8;
             border: 0;
             cursor: pointer;
             padding: .5em;
-            color: red;
-            width: 10%;
+            color: white;
+            width: 50px;
             height: auto;
+            border-radius: 5px;
         }
     }
     .code {
