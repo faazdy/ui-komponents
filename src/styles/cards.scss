@@ -1,11 +1,12 @@
 @use "./variables" as *;
 
-img{max-width: 150px;}
+
 .cards-gallery{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 15px;
   padding: 1em;
+  img{max-width: 150px;}
 }
 .card-container{
   background-color: $color2;

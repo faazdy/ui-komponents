@@ -9,7 +9,7 @@ const herobg = "assets/images/hero-cards.png";
 function CardList() {
   return (
     <main className="cards-main-content">
-      <Herosection title="Cards" description="Hey" bg={herobg} />
+      <Herosection title="Cards" description="Choise ur favorite card to organice info." bg={herobg} />
       <section className="cards-gallery">
         {cards.map((card) => (
           <Card key={card.id} card={card} />

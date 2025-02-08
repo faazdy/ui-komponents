@@ -1,9 +1,9 @@
 export const cards = [
     {
         id: 1,
-        style: { border: "2px solid #333", padding: "10px", borderRadius: "8px" },
+        style: { backgroundColor: "#fff", border: "2px solid #333", padding: "10px", borderRadius: "8px" },
         code: (
-            <div style={{ border: "2px solid #333", padding: "10px", borderRadius: "8px" }}>
+            <div style={{ backgroundColor: "#fff", border: "2px solid #333", padding: "10px", borderRadius: "8px" }}>
                 <h1>Card Simple</h1>
             </div>
         ),
@@ -12,6 +12,7 @@ export const cards = [
     <h1>Card Simple</h1>
 </div>`,
             codeCSS: `.card {
+    background-color: #fff;
     border: 2px solid #333;
     padding: 10px;
     border-radius: 8px;
@@ -20,9 +21,9 @@ export const cards = [
     },
     {
         id: 2,
-        style: { backgroundColor: "#f8f9fa", padding: "15px", borderRadius: "5px" },
+        style: { backgroundColor: "#fff", padding: "15px", borderRadius: "5px" },
         code: (
-            <div style={{ backgroundColor: "#f8f9fa", padding: "15px", borderRadius: "5px" }}>
+            <div style={{ backgroundColor: "#fff", padding: "15px", borderRadius: "5px" }}>
                 <h2>Título</h2>
                 <p>Descripción corta de la tarjeta.</p>
             </div>
@@ -33,7 +34,7 @@ export const cards = [
     <p>Descripción corta de la tarjeta.</p>
 </div>`,
             codeCSS: `.card {
-    background-color: #f8f9fa;
+    background-color: #fff;
     padding: 15px;
     border-radius: 5px;
 }`
@@ -41,9 +42,9 @@ export const cards = [
     },
     {
         id: 3,
-        style: { textAlign: "center", padding: "10px", border: "1px solid #ddd" },
+        style: { backgroundColor: "#fff", textAlign: "center", padding: "10px", border: "1px solid #ddd" },
         code: (
-            <div style={{ textAlign: "center", padding: "10px", border: "1px solid #ddd" }}>
+            <div style={{ backgroundColor: "#fff", textAlign: "center", padding: "10px", border: "1px solid #ddd" }}>
                 <img src="assets/images/hero-cards.png" alt="Imagen" />
                 <h3>Card con Imagen</h3>
                 <p>Esta tarjeta tiene una imagen en la parte superior.</p>
@@ -56,6 +57,7 @@ export const cards = [
     <p>Esta tarjeta tiene una imagen en la parte superior.</p>
 </div>`,
             codeCSS: `.card {
+    background-color: #fff;
     text-align: center;
     padding: 10px;
     border: 1px solid #ddd;
@@ -64,9 +66,9 @@ export const cards = [
     },
     {
         id: 4,
-        style: { boxShadow: "2px 2px 10px rgba(0,0,0,0.1)", padding: "15px", borderRadius: "5px" },
+        style: { backgroundColor: "#fff", boxShadow: "2px 2px 10px rgba(0,0,0,0.1)", padding: "15px", borderRadius: "5px" },
         code: (
-            <div style={{ boxShadow: "2px 2px 10px rgba(0,0,0,0.1)", padding: "15px", borderRadius: "5px" }}>
+            <div style={{ backgroundColor: "#fff", boxShadow: "2px 2px 10px rgba(0,0,0,0.1)", padding: "15px", borderRadius: "5px" }}>
                 <h3>Card con Botón</h3>
                 <p>Incluye un botón de acción.</p>
                 <button style={{ padding: "5px 10px", borderRadius: "3px", background: "#007bff", color: "#fff" }}>
@@ -81,6 +83,7 @@ export const cards = [
     <button class="button">Click Aquí</button>
 </div>`,
             codeCSS: `.card {
+    background-color: #fff;
     box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
     padding: 15px;
     border-radius: 5px;
@@ -95,9 +98,9 @@ export const cards = [
     },
     {
         id: 5,
-        style: { display: "flex", alignItems: "center", gap: "10px", padding: "10px", border: "1px solid #ccc" },
+        style: { backgroundColor: "#fff", display: "flex", alignItems: "center", gap: "10px", padding: "10px", border: "1px solid #ccc" },
         code: (
-            <div style={{ display: "flex", alignItems: "center", gap: "10px", padding: "10px", border: "1px solid #ccc" }}>
+            <div style={{ backgroundColor: "#fff", display: "flex", alignItems: "center", gap: "10px", padding: "10px", border: "1px solid #ccc" }}>
                 <span>🔥</span>
                 <div>
                     <h3>Card con Ícono</h3>
@@ -114,6 +117,7 @@ export const cards = [
     </div>
 </div>`,
             codeCSS: `.card {
+    background-color: #fff;
     display: flex;
     align-items: center;
     gap: 10px;
@@ -124,9 +128,9 @@ export const cards = [
     },
     {
         id: 6,
-        style: { backgroundColor: "#eee", padding: "10px", borderRadius: "5px" },
+        style: { backgroundColor: "#fff", padding: "10px", borderRadius: "5px" },
         code: (
-            <div style={{ backgroundColor: "#eee", padding: "10px", borderRadius: "5px" }}>
+            <div style={{ backgroundColor: "#fff", padding: "10px", borderRadius: "5px" }}>
                 <h3>Card con Footer</h3>
                 <p>Contenido principal aquí.</p>
                 <footer style={{ marginTop: "10px", fontSize: "12px", color: "#666" }}>Pie de página</footer>
@@ -139,7 +143,7 @@ export const cards = [
     <footer>Pie de página</footer>
 </div>`,
             codeCSS: `.card {
-    background-color: #eee;
+    background-color: #fff;
     padding: 10px;
     border-radius: 5px;
 }

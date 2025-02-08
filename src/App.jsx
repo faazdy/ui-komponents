@@ -9,6 +9,7 @@ import Navbar from "./components/Navbar";
 import Shadows from "./pages/shadows/ShadowsList";
 import ButtonList from "./pages/buttons/ButtonList";
 import CardList from "./pages/cards/CardList";
+import Footer from "./components/Footer";
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
           <Route path="/buttons" element={<ButtonList />} />
           <Route path="/cards" element={<CardList />} />
         </Routes>
+        <Footer/>
       </Router>
     </>
   );

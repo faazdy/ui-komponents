@@ -73,3 +73,16 @@ hr{
     border: 1px solid rgba(0, 0, 0, 0.089);
 }
 
+footer{
+    text-align: center;
+    bottom: 0;
+    padding: 1em;
+    width: 100%;
+    background-color: $color5;
+    color: $color2;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    img{max-width: 50px;}
+    li{list-style: none;}
+}
