@@ -1,9 +1,27 @@
-import React from 'react'
+import React, { useState } from "react";
+import Modal from "../../components/Modal";
 
-function Card() {
+function Card({ card }) {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleOpen = () => {
+    setIsOpen(true);
+  };
+  const handleClose = () => {
+    setIsOpen(false);
+  };
+
   return (
-    <div>Card</div>
-  )
+    <div className="card-container">
+      {card.code}
+      <button onClick={handleOpen}>CODE</button>
+      <Modal
+        openCode={isOpen}
+        onClose={handleClose}
+        code={card.codeText.codeCSS}
+      />
+    </div>
+  );
 }
 
-export default Card
+export default Card;

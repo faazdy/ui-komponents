@@ -1,13 +1,22 @@
-import React from 'react'
-import Herosection from '../../components/Herosection'
+import React from "react";
+import Herosection from "../../components/Herosection";
+import { cards } from "../../data/DataCards";
+import Card from "./Card"; 
+import "../../styles/cards.scss";
 
-const herobg = 'assets/images/hero-cards.png'
+const herobg = "assets/images/hero-cards.png";
+
 function CardList() {
   return (
-    <main className='cards-main-content'>
-        <Herosection title="Cards" description="Hey" bg={herobg}/>
+    <main className="cards-main-content">
+      <Herosection title="Cards" description="Hey" bg={herobg} />
+      <section className="cards-gallery">
+        {cards.map((card) => (
+          <Card key={card.id} card={card} />
+        ))}
+      </section>
     </main>
-  )
+  );
 }
 
-export default CardList
+export default CardList;
