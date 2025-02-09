@@ -14,7 +14,7 @@ function Card({ card }) {
   return (
     <div className="card-container">
       {card.code}
-      <button onClick={handleOpen}>CODE</button>
+      <button onClick={handleOpen} className="open-code">Code</button>
       <Modal
         openCode={isOpen}
         onClose={handleClose}
