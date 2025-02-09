@@ -19,12 +19,13 @@
     background-color: whitesmoke;
     display: grid;
     gap: 30px;
-    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 .shadow-card{
     margin: 3em;
     width: auto;
-    max-width: 300px;
     background-color: white;
     padding: 3em;
     display: flex;

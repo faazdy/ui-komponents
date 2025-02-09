@@ -19,17 +19,16 @@
 }
 
 /*-------------------------------BUTTONS----------------------*/
-.buttons-gallery{
+.buttons-gallery {
     background-color: whitesmoke;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
     gap: 25px;
     justify-content: center;
     padding: 3em 2.8em;
-}
+  }
 .button-card{
     width: auto;
-    max-width: 400px;
     padding: 2em;
     background-color: $color2;
     text-align: center;
