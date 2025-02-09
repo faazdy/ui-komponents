@@ -1,14 +1,17 @@
 import React from 'react'
 import { useState } from 'react'
+import Modal from "../../components/Modal"
 import "../../styles/modal.scss"
 import "../../styles/shadows.scss"
 
-function ShadowCard( {id, styles, author} ) {
+function ShadowCard( {id, styles} ) {
     const [isOpen, setIsOpen] = useState(false)
     const handleOpenModal = ()=>{
-        setIsOpen(!isOpen)
+        setIsOpen(true)
     }
-    
+    const handleCloseModal = ()=>{
+        setIsOpen(false)
+    }
     
   return (
     <>
@@ -16,18 +19,7 @@ function ShadowCard( {id, styles, author} ) {
             <strong>Container #{id}</strong>
             <button className='open-code' onClick={handleOpenModal}>Code</button>
         </div>
-        <div className={isOpen ? 'modal-code open' : 'modal-code'}>
-            <div className="modal-content">
-                <div className="modal-header">
-                    <button onClick={handleOpenModal}>X</button>
-                </div>
-                <div className="code">
-                    <pre>
-                        <code>box-shadow: {styles};</code>
-                    </pre>
-                </div>
-            </div>
-        </div>
+        <Modal onClose={handleCloseModal} openCode={isOpen} codecss={`box-shadow: ${styles}`}/>
     </>
   )
 }
