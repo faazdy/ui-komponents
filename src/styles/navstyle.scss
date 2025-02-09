@@ -1,6 +1,6 @@
 @use "variables" as *;
 
-.navbar{
+.navbar {
     background-color: rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(10px);
     display: flex;
@@ -13,31 +13,129 @@
     position: fixed;
 }
 
-.navbar a{
+.navbar a {
     color: black;
     text-decoration: none;
 }
-.navbar h1{
+
+.navbar h1 {
     padding: .5em;
-    transition: .5s all; 
+    transition: .5s all;
 }
-.navbar a h1:hover{
+
+.navbar a h1:hover {
     transform: rotate(180deg);
-    color: $color8; 
+    color: $color8;
 }
-ul{
+
+ul {
     display: flex;
     gap: 15px;
     font-weight: 500;
     list-style: none;
-    li a{
+
+    li a {
         display: inline-block;
         color: black;
         text-decoration: none;
 
-        &:hover{
+        &:hover {
             color: $color8;
             border-bottom: 1px solid;
         }
+    }
+}
+
+.responsive-burger-menu {
+    display: none;
+
+    .burger-menu-options {
+        background-color: $color1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: end;
+        position: absolute;
+        width: 60%;
+        right: 0;
+        border-radius: 10px;
+        overflow: hidden;
+        animation: openMenu .3s ease;
+
+        li,
+        a {
+            width: 100%;
+            text-align: center;
+        }
+
+        a {
+            padding: 1em;
+        }
+
+        li a:hover {
+            background-color: $color8;
+            color: $color1;
+            border: 0;
+        }
+    }
+}
+
+/* From Uiverse.io by JulanDeAlb */
+.hamburger {
+    cursor: pointer;
+}
+
+.hamburger input {
+    display: none;
+}
+
+.hamburger svg {
+    /* The size of the SVG defines the overall size */
+    height: 3em;
+    /* Define the transition for transforming the SVG */
+    transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.line {
+    fill: none;
+    stroke: rgb(0, 0, 0);
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 3;
+    /* Define the transition for transforming the Stroke */
+    transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+        stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.line-top-bottom {
+    stroke-dasharray: 12 63;
+}
+
+.hamburger input:checked+svg {
+    transform: rotate(-45deg);
+}
+
+.hamburger input:checked+svg .line-top-bottom {
+    stroke-dasharray: 20 300;
+    stroke-dashoffset: -32.42;
+}
+
+@media screen and (max-width: 700px) {
+    .navbar .nav-options {
+        display: none;
+    }
+
+    .responsive-burger-menu {
+        display: block;
+    }
+}
+
+@keyframes openMenu {
+    from {
+        transform: translateX(-5000px);
+    }
+
+    to {
+        transform: translateX(0);
     }
 }

@@ -89,3 +89,18 @@ footer{
     img{max-width: 50px;}
     li{list-style: none;}
 }
+
+@media screen and (max-width: 800px){
+    .main-section-content{
+        grid-template-columns: 1fr;
+        img{display: none;}
+    }
+}
+@media screen and (max-width: 1150px) {
+    .main-hero-content{
+        justify-content: center;
+        text-align: center;
+        h1{font-size: 72px;}
+        img{display: none;}
+    }
+}
