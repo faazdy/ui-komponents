@@ -18,7 +18,8 @@ function Card({ card }) {
       <Modal
         openCode={isOpen}
         onClose={handleClose}
-        code={card.codeText.codeCSS}
+        codehtml={card.codeText.codeHTML}
+        codecss={card.codeText.codeCSS}
       />
     </div>
   );

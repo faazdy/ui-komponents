@@ -16,7 +16,7 @@ function Button( {id, classname, styles} ) {
         <div className="button-card">
             <button className={`button-example ${classname}`} onClick={handleOpen}>Button #{id}</button>
         </div>
-        <Modal code={styles ? styles : 'NO STYLES'} openCode={openModal} onClose={handleClose}/>
+        <Modal codecss={styles ? styles : 'NO STYLES'} openCode={openModal} onClose={handleClose}/>
     </>
   )
 }

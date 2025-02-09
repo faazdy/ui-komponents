@@ -47,6 +47,16 @@
         margin-top: .5em;
         overflow-x: auto;
         max-width: 100%;
+        transition: .3s all ease;
+    }
+    &:hover .code{
+        opacity: 0.5;
+    }
+    .code:hover{
+        opacity: 1;
+    }
+    .code:hover .language{
+        opacity: 1;
     }
     
     .code code {
@@ -71,6 +81,15 @@
         background: #777;
     }
     
+    .code .language{
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.137);
+        padding: .5em 0;
+        opacity: 0.5;
+        img{max-width: 30px;}
+    }
 }
 
 
