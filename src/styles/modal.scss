@@ -103,3 +103,9 @@
         transform: scale(1);
     }
 }
+
+@media screen and (max-width: 900px) {
+    .modal-content{
+        width: 90%;
+    }
+}
