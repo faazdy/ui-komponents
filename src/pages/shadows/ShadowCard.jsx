@@ -19,7 +19,7 @@ function ShadowCard( {id, styles} ) {
             <strong>Container #{id}</strong>
             <button className='open-code' onClick={handleOpenModal}>Code</button>
         </div>
-        <Modal onClose={handleCloseModal} openCode={isOpen} codecss={`box-shadow: ${styles}`}/>
+        <Modal onClose={handleCloseModal} openCode={isOpen} codecss={`box-shadow: ${styles};`}/>
     </>
   )
 }
