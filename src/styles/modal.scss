@@ -63,21 +63,22 @@
         font-size: 14px;
         line-height: 1.5;
         white-space: pre-wrap;
-        word-break: break-word; /* Evita que palabras muy largas rompan el diseño */
+        word-break: break-word; /* Evita que palabras muy largas rompan el diseño */   
     }
+
     
     /* scrollbar*/
-    .code::-webkit-scrollbar {
+    .code pre::-webkit-scrollbar {
         width: 8px;
         height: 8px;
     }
     
-    .code::-webkit-scrollbar-thumb {
+    .code pre::-webkit-scrollbar-thumb {
         background: #555;
         border-radius: 10px;
     }
     
-    .code::-webkit-scrollbar-thumb:hover {
+    .code pre::-webkit-scrollbar-thumb:hover {
         background: #777;
     }
     
