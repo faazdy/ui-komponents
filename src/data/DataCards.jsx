@@ -147,7 +147,7 @@ export const cards = [
     padding: 10px;
     border-radius: 5px;
 }
-footer {
+.card footer {
     margin-top: 10px;
     font-size: 12px;
     color: #666;
