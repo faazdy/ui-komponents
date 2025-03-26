@@ -90,6 +90,53 @@ footer{
     li{list-style: none;}
 }
 
+/*NOT FOUND 404*/
+.not-found-main{
+    background: $bgradiend1;
+    min-height: 100vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+    gap: 15px;
+
+    .not-found-info{
+        h1{
+            font-size: 55px;
+            font-weight: 300;
+            margin: .5em 0;
+            color: $color5;
+        }
+        p{
+            font-size: 23px;
+            color: $color8;
+            margin-bottom: 1em;
+        }
+        a{
+            display: inline-block;
+            padding: 1em;
+            color: $color8;
+            font-size: 18px;
+            text-decoration: none;
+            border: 1px solid $color8;
+            transition: background .3s ease;
+    
+            &:hover{
+                background-color: $color8;
+                color: $color1;
+            }
+        }
+    }
+
+    .not-found-image{
+        padding: 1em 2em;
+        img{width: 80%;}
+    }
+
+}
+
+
 @media screen and (max-width: 800px){
     .main-section-content{
         grid-template-columns: 1fr;
