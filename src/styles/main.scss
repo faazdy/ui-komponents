@@ -142,6 +142,9 @@ footer{
         grid-template-columns: 1fr;
         img{display: none;}
     }
+    .not-found-main{
+        flex-direction: column-reverse;
+    }
 }
 @media screen and (max-width: 1150px) {
     .main-hero-content{
