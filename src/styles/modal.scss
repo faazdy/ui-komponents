@@ -47,30 +47,50 @@
         margin-top: .5em;
         overflow-x: auto;
         max-width: 100%;
+        transition: .3s all ease;
+    }
+    &:hover .code{
+        opacity: .9;
+    }
+    .code:hover{
+        opacity: 1;
+    }
+    .code:hover .language{
+        opacity: 1;
     }
     
     .code code {
         font-size: 14px;
         line-height: 1.5;
         white-space: pre-wrap;
-        word-break: break-word; /* Evita que palabras muy largas rompan el diseño */
+        word-break: break-word; /* Evita que palabras muy largas rompan el diseño */   
     }
+
     
     /* scrollbar*/
-    .code::-webkit-scrollbar {
+    .code pre::-webkit-scrollbar {
         width: 8px;
         height: 8px;
     }
     
-    .code::-webkit-scrollbar-thumb {
+    .code pre::-webkit-scrollbar-thumb {
         background: #555;
         border-radius: 10px;
     }
     
-    .code::-webkit-scrollbar-thumb:hover {
+    .code pre::-webkit-scrollbar-thumb:hover {
         background: #777;
     }
     
+    .code .language{
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.137);
+        padding: .5em 0;
+        opacity: 0.5;
+        img{max-width: 30px;}
+    }
 }
 
 
@@ -82,5 +102,11 @@
     to{
         opacity: 1;
         transform: scale(1);
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .modal-content{
+        width: 90%;
     }
 }

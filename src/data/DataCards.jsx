@@ -44,7 +44,7 @@ export const cards = [
         id: 3,
         style: { backgroundColor: "#fff", textAlign: "center", padding: "10px", border: "1px solid #ddd" },
         code: (
-            <div style={{ backgroundColor: "#fff", textAlign: "center", padding: "10px", border: "1px solid #ddd" }}>
+            <div style={{ backgroundColor: "#fff", textAlign: "center", padding: "10px", border: "1px solid #ddd", borderRadius: "10px" }}>
                 <img src="assets/images/hero-cards.png" alt="Imagen" />
                 <h3>Card con Imagen</h3>
                 <p>Esta tarjeta tiene una imagen en la parte superior.</p>
@@ -147,7 +147,7 @@ export const cards = [
     padding: 10px;
     border-radius: 5px;
 }
-footer {
+.card footer {
     margin-top: 10px;
     font-size: 12px;
     color: #666;

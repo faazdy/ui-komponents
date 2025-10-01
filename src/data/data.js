@@ -1,22 +1,3 @@
-export const generalComponents = [
-  {
-    id: 1,
-    title: "Button Primary",
-    description: "Un botón estilizado con hover",
-    code: "<button class='btn-primary'>Click Me</button>",
-    style:
-      ".btn-primary { background: #007BFF; color: white; border: none; padding: 10px 20px; border-radius: 5px; }",
-  },
-  {
-    id: 2,
-    title: "Card Component",
-    description: "Un diseño de tarjeta simple",
-    code: "<div class='card'><h3>Card Title</h3><p>Card content...</p></div>",
-    style:
-      ".card { border: 1px solid #ddd; padding: 20px; border-radius: 5px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }",
-  },
-];
-
 export const shadows = [
   {
     id: 1,

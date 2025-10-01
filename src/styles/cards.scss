@@ -2,11 +2,14 @@
 
 
 .cards-gallery{
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 15px;
-  padding: 1em;
-  img{max-width: 150px;}
+    background-color: whitesmoke;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 25px;
+    justify-content: center;
+    padding: 3em 2.8em;
+
+    img{max-width: 100%;}
 }
 .card-container{
   background-color: $color2;
@@ -16,4 +19,5 @@
   align-items: center;
   flex-direction: column;
   gap: 15px;
+  border-radius: 5px;
 }
