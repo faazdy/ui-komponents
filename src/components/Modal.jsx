@@ -4,7 +4,7 @@ import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { dracula } from "react-syntax-highlighter/dist/esm/styles/prism"; 
 import "../styles/modal.scss";
 
-function Modal({ codehtml, codecss, openCode, onClose }) {
+function Modal({ codehtml, codecss, codejs, openCode, onClose }) {
   if (!openCode) {
     return null;
   }
@@ -22,8 +22,16 @@ function Modal({ codehtml, codecss, openCode, onClose }) {
               <img src="assets/icons/html.svg" alt="html-logo" />
               <h1>HTML</h1>
             </div>
+            <div className="btn">
+              <button
+                onClick={() => navigator.clipboard.writeText(codehtml)}
+                className="copy-btn"
+              >
+                Copy HTML
+              </button>
+            </div>
             <SyntaxHighlighter language="html" style={dracula}>
-              {codehtml}
+              {codehtml.trim()}
             </SyntaxHighlighter>
           </div>
         )}
@@ -34,8 +42,36 @@ function Modal({ codehtml, codecss, openCode, onClose }) {
               <img src="assets/icons/css.svg" alt="css-logo" />
               <h1>CSS</h1>
             </div>
-            <SyntaxHighlighter language="css" style={dracula}>
-              {codecss}
+            <div className="btn">
+              <button
+                onClick={() => navigator.clipboard.writeText(codecss)}
+                className="copy-btn"
+              >
+                Copy CSS
+              </button>
+            </div>
+            <SyntaxHighlighter language="css" style={dracula} wrapLines>
+              {codecss.trim()}
+            </SyntaxHighlighter>
+          </div>
+        )}
+
+        {codejs && (
+          <div className="code js">
+            <div className="language">
+              <img src="assets/icons/js.svg" alt="css-logo" />
+              <h1>JavaScript</h1>
+            </div>
+            <div className="btn">
+              <button
+                onClick={() => navigator.clipboard.writeText(codejs)}
+                className="copy-btn"
+              >
+                Copy JS
+              </button>
+            </div>
+            <SyntaxHighlighter language="javascript" style={dracula}>
+              {codejs.trim()}
             </SyntaxHighlighter>
           </div>
         )}

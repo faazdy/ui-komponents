@@ -13,13 +13,14 @@ function Card({ card }) {
 
   return (
     <div className="card-container">
-      {card.code}
+      <img src={card.image} alt="card-img" className="card-prev-img"/>
       <button onClick={handleOpen} className="open-code">Code</button>
       <Modal
         openCode={isOpen}
         onClose={handleClose}
         codehtml={card.codeText.codeHTML}
         codecss={card.codeText.codeCSS}
+        codejs={card.codeText.codeJS}
       />
     </div>
   );

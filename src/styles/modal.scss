@@ -29,6 +29,7 @@
         padding: .3em;
         position: sticky;
         top: 0;
+        z-index: 5;
         button{
             background-color: $color8;
             border: 0;
@@ -57,6 +58,26 @@
     }
     .code:hover .language{
         opacity: 1;
+    }
+
+    .code .btn{
+        padding: 1em 0;
+
+        button{
+            background-color: transparent;
+            border: 0;
+            border: 1px solid $color5;
+            color: $color5;
+            padding: .5em 1em;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: .3s all ease;
+
+            &:active, &:hover{
+                background-color: $color5;
+                color: white;
+            }
+        }
     }
     
     .code code {

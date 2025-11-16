@@ -1,6 +1,6 @@
 import React from "react";
 import Herosection from "../../components/Herosection";
-import { cards } from "../../data/DataCards";
+import { cards } from "../../data/data";
 import Card from "./Card"; 
 import "../../styles/cards.scss";
 
